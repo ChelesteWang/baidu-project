@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../assets/img/bg.jpg) no-repeat;
+    background-size: 120%;
+    background-position: top center;
+    --font-color: #8c6900;
+}
+
+.common {
+    border: 0.4rem solid var(--font-color);
+    border-radius: 4.6875rem;
+    background: linear-gradient(180deg, #ffe699 50%, #ffd24d 50%);
+}
+
+.header {
+    display: flex;
+}
+
+.date {
+    flex: 3;
+    height: 2rem;
+    margin: 0.5rem 2rem 0.5rem 0.5rem;
+}
+
+.date p {
+    color: var(--font-color);
+    line-height: 2rem;
+    text-align: center;
+}
+
+.money {
+    flex: 5;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+.money p {
+    font-size: .875rem;
+    color: var(--font-color);
+    line-height: 2rem;
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.chefs {
+    background-color: #ffd24d;
+    border: 0.4rem solid white;
+    border-radius: 1rem;
+    height: 7rem;
+    margin: 0.5rem;
+}
+
+.customers {
+    background-color: #ffa64d;
+    border: 0.4rem solid white;
+    border-radius: 1rem;
+    height: 15rem;
+    margin: 0.5rem;
+    margin-top: 8.5rem;
+}
