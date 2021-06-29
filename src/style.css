@@ -8,6 +8,9 @@ body {
     background-size: 120%;
     background-position: top center;
     --font-color: #8c6900;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .common {
@@ -61,4 +64,67 @@ body {
     height: 15rem;
     margin: 0.5rem;
     margin-top: 8.5rem;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.welcome-menu {
+    background-color: #ffd24d;
+    border: 0.4rem solid white;
+    border-radius: 1rem;
+    width: 100%;
+    margin: auto 0.5rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-welcome {
+    width: 80%;
+    height: 4rem;
+    border: 0.2rem solid var(--font-color);
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+.menu-title {
+    color: #513a00;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    font-weight: 100；
+}
+
+.menu-content {
+    color: #8c6800;
+    font-size: 1rem;
+    margin: 0.5rem 2.5rem;
+    line-height: 1.5rem;
+}
+
+.metter {
+    display: flex;
+    width: 80%;
+    margin: 0.5rem auto;
+    justify-content: space-between;
+}
+
+.menu-a {
+    color: #8e6a01;
+    font-size: 1.2rem;
 }
