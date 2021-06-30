@@ -53,7 +53,7 @@ body {
     background-color: #ffd24d;
     border: 0.4rem solid white;
     border-radius: 1rem;
-    height: 7rem;
+    height: 8rem;
     margin: 0.5rem;
 }
 
@@ -66,8 +66,7 @@ body {
     margin-top: 8.5rem;
 }
 
-.menu {
-    background-color: rgba(0, 0, 0, 0.5);
+.container {
     width: 100%;
     position: absolute;
     top: 0;
@@ -77,6 +76,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .welcome-menu {
@@ -107,7 +110,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     margin: 0.5rem;
-    font-weight: 100；
+    font-weight: normal；
 }
 
 .menu-content {
@@ -127,4 +130,115 @@ body {
 .menu-a {
     color: #8e6a01;
     font-size: 1.2rem;
+}
+
+.alert {
+    width: 18rem;
+    height: 4rem;
+    border: 0.4rem solid white;
+    border-radius: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+.warning {
+    background-color: #ffb399;
+}
+
+.safety {
+    background-color: #d9e67d;
+}
+
+.alert>p {
+    line-height: 1.5rem;
+    margin: 0.5rem 1rem;
+    color: var(--font-color);
+    font-weight: normal;
+}
+
+.order-menu {
+    background-color: #ffd24d;
+    border: 0.4rem solid white;
+    border-radius: 1rem;
+    width: 100%;
+    margin: auto 0.5rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: .5rem;
+}
+
+.menu .customer {
+    position: absolute;
+    top: -4rem;
+    left: 5rem;
+}
+
+.menu .title {
+    position: absolute;
+    top: 2rem;
+    left: 16rem;
+    color: #513a00;
+    font-size: 2rem;
+}
+
+.order-form {
+    width: 23rem;
+    height: 25rem;
+    margin: 0 auto;
+    background-color: white;
+    border: 0.4rem solid #d9b547;
+    font-size: 1rem;
+    color: #8c6600;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order-form h3 {
+    align-self: flex-start;
+    margin: 0.6rem 1.2rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.menu-item span {
+    margin: 0 1rem;
+}
+
+.menu-title {
+    color: #513a00;
+    text-align: right;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    font-weight: normal；
+}
+
+.order-btn {
+    display: flex;
+}
+
+.btn-order {
+    height: 3rem;
+    border: 0.2rem solid var(--font-color);
+    color: var(--font-color);
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+}
+
+.order {
+    flex: 6;
+    margin-right: 0.5rem;
+}
+
+.quit {
+    flex: 4;
+    margin-left: 0.75rem;
 }
