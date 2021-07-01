@@ -50,20 +50,25 @@ body {
 }
 
 .chefs {
+    position: absolute;
+    top: 3.5rem;
     background-color: #ffd24d;
     border: 0.4rem solid white;
     border-radius: 1rem;
-    height: 8rem;
     margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .customers {
+    position: absolute;
+    bottom: 1.5rem;
     background-color: #ffa64d;
     border: 0.4rem solid white;
     border-radius: 1rem;
-    height: 15rem;
     margin: 0.5rem;
-    margin-top: 8.5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -78,7 +83,7 @@ body {
     flex-direction: row;
 }
 
-.menu {
+#menu {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -91,6 +96,7 @@ body {
     height: 16rem;
     display: flex;
     flex-direction: column;
+    z-index: 50;
 }
 
 .btn-welcome {
@@ -169,7 +175,7 @@ body {
     top: .5rem;
 }
 
-.menu .customer {
+/* .menu .customer {
     position: absolute;
     top: -4rem;
     left: 5rem;
@@ -181,7 +187,7 @@ body {
     left: 16rem;
     color: #513a00;
     font-size: 2rem;
-}
+} */
 
 .order-form {
     width: 23rem;
@@ -212,7 +218,7 @@ body {
     margin: 0 1rem;
 }
 
-.menu-title {
+.alert-title {
     color: #513a00;
     text-align: right;
     font-size: 1rem;
@@ -241,4 +247,116 @@ body {
 .quit {
     flex: 4;
     margin-left: 0.75rem;
+}
+
+/* .waiting {
+    position: absolute;
+    bottom: 25rem;
+    right: 35rem;
+    background: transparent;
+    height: 100rem;
+    width: 430rem;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.chef {
+    margin: 0.75rem;
+    margin-right: 1.5rem;
+}
+
+.customer {
+    margin: 0.75rem;
+    margin-right: 6rem;
+}
+
+.seat {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+    overflow: hidden;
+}
+
+.unuse {
+    background: linear-gradient(-90deg, #aaa 50%, #ddd 50%);
+}
+
+.finished {
+    background: linear-gradient(-90deg, #ac91ff 50%, #7a4dff 50%);
+}
+
+.paying {
+    background: linear-gradient(-90deg, #80ff00 50%, #00b200 50%);
+}
+
+.cooking {
+    background: linear-gradient(-90deg, #ff9122 50%, #d96d00 50%);
+}
+
+.sitting {
+    background: linear-gradient(-90deg, #ff2626 50%, #b20000 50%);
+}
+
+.waiting {
+    background: linear-gradient(-90deg, #2693ff 50%, #006dd9 50%);
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+}
+
+.avatar1 {
+    background: url("../assets/img/customer_1.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.avatar2 {
+    background: url("../assets/img/customer_2.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.avatar3 {
+    background: url("../assets/img/customer_3.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.avatar4 {
+    background: url("../assets/img/customer_4.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.avatar5 {
+    background: url("../assets/img/customer_5.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.avatar6 {
+    background: url("../assets/img/customer_6.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.avatar7 {
+    background: url("../assets/img/customer_7.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.chef_img {
+    background: url("../assets/img/chef.png");
+    background-position: center center;
+    background-size: 120%;
+}
+
+.no-chef {
+    background: url("../assets/img/no-chef.png");
+    background-position: center center;
+    background-size: 120%;
 }

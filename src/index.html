@@ -20,14 +20,30 @@
     </div>
     <div class="main">
         <div class="chefs">
-            <div class="chef"></div>
+            <div class="seat chef unuse">
+            </div>
+            <div class="seat chef unuse">
+            </div>
+            <div class="seat chef unuse">
+            </div>
+            <!-- <div class="seat chef unuse">
+            </div> -->
         </div>
         <div class="customers">
-            <div class="customer"></div>
+            <div class="seat customer unuse">
+            </div>
+            <div class="seat customer unuse">
+            </div>
+            <div class="seat customer unuse">
+            </div>
+            <div class="seat customer unuse">
+            </div>
         </div>
     </div>
-    <div class="menu container">
-        <div class="welcome-menu" style="display:none">
+    <div class="container" id="info">
+    </div>
+    <div class="container" id="menu" style="display:none">
+        <div class="welcome-menu" id="welcome">
             <h2 class="menu-title">WebMOOC餐厅开业啦！</h2>
             <p class="menu-content">WebMOOC餐厅即将开业，请认真经营你的餐厅吧，经营餐厅需要做好下面几件事情！加油！</p>
             <div class="metter">
@@ -35,77 +51,11 @@
                 <span class="menu-a">迎接客人</span>
                 <span class="menu-a">烹饪美食</span>
             </div>
-            <button class="common btn-welcome">开始经营吧</button>
-        </div>
-        <div class='chef-menu'>
-            <div class='add-chef-menu'></div>
-            <div class='remove-chef-menu'></div>
-        </div>
-        <div class="order-menu">
-            <h2 id="menu_title" class="menu-title">wxy 正在点菜，已点30元
-            </h2>
-            <div class="cus_waiting customer" id="menu_avatar"></div>
-            <div class="form">
-                <form id="order-form" class="order-form">
-                    <h3>凉菜（二选一，可不点）</h3>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="6" name="menu" /><span>凉拌SAN</span></div>
-                        <div>···························<span>￥6</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="4" name="menu" /><span>冷切DOM</span></div>
-                        <div>···························<span>￥4</span></div>
-                    </div>
-                    <h3>主菜（五选一，必点）</h3>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="12" name="menu" /><span>UL抄LI</span></div>
-                        <div>···························<span>￥12</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="15" name="menu" /><span>红烧HEAD</span></div>
-                        <div>···························<span>￥15</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="18" name="menu" /><span>酥炸ECharts</span></div>
-                        <div>···························<span>￥18</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="16" name="menu" /><span>炙烤CSS</span></div>
-                        <div>···························<span>￥16</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="12" name="menu" /><span>清蒸DIV</span></div>
-                        <div>···························<span>￥12</span></div>
-                    </div>
-                    <h3>饮品（二选一，可不点）</h3>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="5" name="menu" /><span>鲜榨flex</span></div>
-                        <div>···························<span>￥5</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div><input type="checkbox" value="6" name="menu" /><span>小程序奶茶</span></div>
-                        <div>···························<span>￥6</span></div>
-                    </div>
-                </form>
-                <div class="order-btn">
-                    <button class="common btn-order order" id="order">点好了，快点上菜</button>
-                    <button class="common btn-order quit" id="quit">不吃了</button>
-                </div>
-            </div>
+            <button class="common btn-welcome" onclick="start()">开始经营吧</button>
         </div>
     </div>
-    <div class="container">
-        <!-- <div class="alert warning">
-            <p>餐厅目前有空位,赶紧点击等位客人头像
-                让客人入座点餐吧</p>
-        </div> -->
-        <!-- <div class="alert safety"> -->
-        <p>
-        </p>
-    </div>
-    </div>
-    <div class="customer"></div>
-    <script src="../src/index.js"></script>
+    <div class="waiting" id="waiting"></div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
