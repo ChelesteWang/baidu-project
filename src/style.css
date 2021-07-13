@@ -56,19 +56,27 @@ body {
     border: 0.4rem solid white;
     border-radius: 1rem;
     margin: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .customers {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 2.5rem;
     background-color: #ffa64d;
     border: 0.4rem solid white;
     border-radius: 1rem;
     margin: 0.5rem;
+}
+
+.chef-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.customer-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container {
@@ -131,20 +139,18 @@ body {
     width: 80%;
     margin: 0.5rem auto;
     justify-content: space-between;
-}
-
-.menu-a {
     color: #8e6a01;
     font-size: 1.2rem;
 }
 
 .alert {
+    font-size: 0.8rem;
     width: 18rem;
     height: 4rem;
     border: 0.4rem solid white;
     border-radius: 1rem;
     position: relative;
-    top: 2rem;
+    top: 0.5rem;
 }
 
 .warning {
@@ -249,25 +255,15 @@ body {
     margin-left: 0.75rem;
 }
 
-/* .waiting {
-    position: absolute;
-    bottom: 25rem;
-    right: 35rem;
-    background: transparent;
-    height: 100rem;
-    width: 430rem;
-    display: flex;
-    justify-content: flex-end;
-} */
-
 .chef {
     margin: 0.75rem;
     margin-right: 1.5rem;
 }
 
 .customer {
-    margin: 0.75rem;
-    margin-right: 6rem;
+    margin: 0.2rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
 }
 
 .seat {
@@ -305,6 +301,15 @@ body {
 .avatar {
     width: 5rem;
     height: 5rem;
+}
+
+.waiting-space {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    left: -1rem;
 }
 
 .avatar1 {

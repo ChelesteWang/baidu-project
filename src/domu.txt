@@ -1,64 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <div class="alert warning">
+                <p>餐厅目前有空位,赶紧点击等位客人头像
+                    让客人入座点餐吧</p>
+            </div> -->
+        <!-- <div class="alert safety"> -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebMOOC 餐厅游戏</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <div class="header">
-        <div class="common date">
-            <p>W1 D1</p>
-        </div>
-        <div class="common money">
-            <p>112</p>
-        </div>
-    </div>
-    <div class="main">
-        <div class="chefs">
-            <div class="chef-container">
-                <div class="seat chef unuse">
-                </div>
-                <div class="seat chef unuse">
-                </div>
-                <div class="seat chef unuse">
-                </div>
-            </div>
-        </div>
-        <div class="customers">
-            <div class="customer-container">
-                <div class="seat customer unuse">
-                </div>
-                <div class="seat customer unuse">
-                </div>
-                <div class="seat customer unuse">
-                </div>
-                <div class="seat customer unuse">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="info">
-        <div class="alert warning">
-            <p>餐厅目前有空位,赶紧点击等位客人头像
-                让客人入座点餐吧</p>
-        </div>
-    </div>
-    <div class="container" id="menu">
-        <div class="welcome-menu" id="welcome">
-            <h2 class="menu-title">WebMOOC餐厅开业啦！</h2>
-            <p class="menu-content">WebMOOC餐厅即将开业，请认真经营你的餐厅吧，经营餐厅需要做好下面几件事情！加油！</p>
-            <div class="metter">
-                <span>招聘厨师</span>
-                <span>迎接客人</span>
-                <span>烹饪美食</span>
-            </div>
-            <button class="common btn-welcome" onclick="start()">开始经营吧</button>
-        </div>
         <div class='chef-menu'>
             <div class='add-chef-menu'></div>
             <div class='remove-chef-menu'></div>
@@ -115,19 +61,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="waiting-space" id="waiting">
-        <div class="seat unuse" style="position: relative;left:-2rem;">
-            <div class="avatar avatar1"></div>
-        </div>
-        <div class="seat unuse" style="position: relative;left:-2rem;">
-            <div class="avatar avatar1"></div>
-        </div>
-        <div class="seat unuse" style="position: relative;left:-2rem;">
-            <div class="avatar avatar1"></div>
-        </div>
-    </div>
-    <script src="./index.js" type="module"></script>
-</body>
 
-</html>
+
+
+
+    <div class="container">
+    </div>
+    <div class="customer"></div>
